@@ -1,0 +1,138 @@
+.main-div {
+    background: black;
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 90%;
+    width: 90%;
+    position: relative;
+    padding: 7px;
+    margin: 25px;
+    background: black;
+    border: none;
+    text-align: center;
+}
+
+.container::before,
+.container::after {
+    position: absolute;
+    content: "";
+}
+
+.container::before {
+    left: 0;
+    top: 0;
+    width: 15%;
+    /*Adjust the width to make the top-left border longer*/
+    height: 30%;
+    /*Adjust the height to make the top-left border longer*/
+    border-left: 10px solid green;
+    border-top: 10px solid green;
+    border-image: linear-gradient(45deg, #61a94e 0%, #088395 50%, #61a94e 100%);
+    /*Set the gradient colors and direction*/
+    border-image-slice: 1;
+}
+
+.container::after {
+    right: 0;
+    bottom: 0;
+    width: 15%;
+    height: 30%;
+    border-right: 10px solid green;
+    border-bottom: 10px solid green;
+    border-image: linear-gradient(45deg, #61a94e 0%, #088395 50%, #61a94e 100%);
+    border-image-slice: 1;
+}
+
+.upper-div {
+    /* border: 1px solid red; */
+    color: white;
+    display: block;
+}
+
+.heading {
+    background: -webkit-linear-gradient(180deg, #61A94E 0%, #088395 50%, #61A94E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    font-family: Quicksand;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 0px;
+
+}
+
+.heading-text {
+    font-family: Nunito;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 1px;
+    text-align: center;
+
+
+
+}
+
+.lower-left {
+    margin-top: 30px;
+    color: white;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px 10px 10px 30px;
+
+
+}
+
+#get-to-know-me {
+    font-family: Quicksand;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: 1px;
+    text-align: center;
+
+
+    display: flex;
+    align-items: flex-start;
+}
+
+#get-to-know-me-para {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    padding-right: 100px;
+    border-right: 3px solid #61A94E;
+    font-family: Nunito;
+    letter-spacing: 1px;
+    text-align: justified;
+}
+
+#contact-button-div {
+    display: block;
+    height: 30px;
+    width: 150px;
+    margin-top: 20px;
+    padding: 12.5px 40.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--bt-3, linear-gradient(90deg, #61a94e 0%, #088395 100%));
+    color: var(--white, #fff);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+  }

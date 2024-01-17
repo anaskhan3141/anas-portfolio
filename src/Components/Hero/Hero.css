@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../../fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('../../fonts/Nunito-VariableFont_wght.ttf') format('truetype');
+}
+
+
+
+#hero-main-div {
+  margin-top: 60px;
+  height: 100vh;
+  background: #000;
+  background-image: url("../../assests/Square.svg");
+  background-size: 82px;
+  background-position: 0 0;
+  background-repeat: repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#hero-text-plus-button-div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 70px;
+  width: 90%;
+}
+
+#hero-text-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+#hero-upper-text {
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#hero-lower-text {
+  color: #fff;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  width: 854px;
+  height: 59px;
+}
+
+#projects-button-div {
+  display: flex;
+  height: 40px;
+  padding: 12.5px 68.5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--bt-3, linear-gradient(90deg, #61a94e 0%, #088395 100%));
+  color: var(--wjhite, #fff);
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+#social-icons-main-div {
+  display: inline-flex;
+  padding: 8px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 8px;
+  background: radial-gradient(
+    151.92% 127.02% at 15.32% 21.04%,
+    rgba(105, 59, 147, 0.2) 0%,
+    rgba(97, 169, 78, 0.04) 77.08%,
+    rgba(97, 169, 78, 0.2) 100%
+  );
+}
+#social-icons-main-div img:hover{
+  transform: scale(1.2);
+}
+#social-icons-main-div img{
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
