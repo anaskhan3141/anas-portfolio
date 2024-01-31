@@ -17,12 +17,17 @@
   background-size: 82px;
   background-position: 0 0;
   background-repeat: repeat;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start; */
+  position: relative;
 }
 
 #hero-text-plus-button-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -59,8 +64,8 @@
   width: 854px;
   height: 59px;
 }
-
 #projects-button-div {
+
   display: flex;
   height: 40px;
   padding: 12.5px 68.5px;
@@ -71,14 +76,20 @@
   color: var(--wjhite, #fff);
   text-align: center;
   font-family: Quicksand;
-  font-size: 26px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
 }
 
+
+
 #social-icons-main-div {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%,-50%); 
   display: inline-flex;
   padding: 8px 0px;
   flex-direction: column;

@@ -1,0 +1,73 @@
+#contact-me-section {
+    height: 100vh;
+    background: #000;
+    background-image: url("../../assests/Square.svg");
+    background-size: 82px;
+    background-position: 0 0;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 94%;
+    height: 92%;
+}
+
+#heading-text {
+    color: white;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 800px;
+}
+
+input, textarea{
+    /* box-sizing: border-box; */
+    display: block;
+    border: 1px solid transparent;
+    border-image: linear-gradient(90deg, #61A94E 0%, #088395 100%);
+    border-image-slice: 1;
+    background-color: rgba(12, 12, 12, 1);
+    /* border-radius: 100px; */
+    height: 60px;
+    width: 450px;
+    margin: 10px;
+    color: white;
+    transition: all ease 0.3s;
+    resize: none;
+
+}
+textarea{
+    height: 180px;
+}
+
+
+
+
+
+input::placeholder, textarea::placeholder{
+    font-family: Quicksand;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px;
+
+}
+
+
+input:focus, textarea {
+    outline: none;
+    transform: scale(1.01);
+    border: 1px solid transparent;
+    border-image: linear-gradient(90deg, #61A94E 0%, #088395 100%);
+    border-image-slice: 1;
+}

@@ -1,0 +1,88 @@
+#project-component-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 270px;
+}
+
+#image-div {
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#image-subdiv {
+    border-radius: 10px;
+    width: 93%;
+    height: 93%;
+    overflow: hidden;
+}
+
+#image-subdiv img {
+
+    max-height: 100%;
+    height: auto;
+    display: block;
+}
+
+
+#description-div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 50%;
+    /* transform: translateX(-50%); */
+
+}
+
+#description-detail-div {
+
+    border-radius: 14px;
+    font-family: Nunito;
+    text-align: justify;
+    background: url('../../../assests/descriptionBox.svg'), lightgray 0% 0% / 154.22531366348267px 154.22531366348267px repeat, radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(107, 59, 147, 0.20) 0%, rgba(97, 169, 78, 0.04) 77.08%, rgba(97, 169, 78, 0.40) 100%);
+    background-blend-mode: overlay, normal;
+    backdrop-filter: blur(40px);
+
+    width: 100%;
+    height: 80px;
+    padding: 25px;
+    word-wrap: break-word;
+}
+
+#featured-project {
+    margin: 0px;
+    padding: 0px;
+    color: #61A94E;
+    text-align: right;
+    font-family: Quicksand;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#project-heading {
+    margin: 0px;
+    padding: 0px;
+    color: var(--txt, #9F9F9F);
+    text-align: right;
+    font-family: Quicksand;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#view-porject-button {
+    border-radius: 8px;
+    background: var(--bt-3, linear-gradient(90deg, #61A94E 0%, #088395 100%));
+    display: flex;
+    height: 40px;
+    padding: 5px 20px;
+    align-items: center;
+    font-family: Quicksand;
+}
